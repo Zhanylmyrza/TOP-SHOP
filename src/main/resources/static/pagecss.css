@@ -1,0 +1,349 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-align-content: center;
+  align-content: center;
+}
+
+body {
+  background-color: white;
+  background-size: 100%;
+  background-repeat: repeat;
+}
+
+header {
+  font-size: 17px;
+  border-bottom: 1.8px solid lightgrey;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  float: right;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  text-decoration: none;
+}
+.dir a {
+  text-decoration: none;
+  font-family: arial black;
+  float: right;
+}
+
+h2 {
+  font-family: Arial Black;
+  font-size: 2em;
+}
+
+h3 {
+  font-family: Arial Black;
+  font-size: 1em;
+  padding: 20px 0 5px 0;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 1em;
+  font-family: arial black;
+}
+
+.icons img {
+  float: left;
+  display: inline-block;
+}
+
+.minimal img {
+  text-align: center;
+  display: block;
+}
+
+.minimal a {
+  background-color: white;
+  text-align: center;
+}
+
+.second {
+  padding-top: 170px;
+  padding-bottom: 25px;
+  padding-left: 60px;
+  padding-right: 500px;
+  word-spacing: 30px;
+  background-color: #f2f2f2;
+}
+.second a {
+  color: black;
+  text-decoration: none;
+  font-family: a` rial black;
+  font-family: Arial Black;
+  text-align: center;
+  font-size: 17px;
+}
+
+.swag img {
+  margin-top: 70px;
+  float: left;
+}
+.beg {
+  margin-top: -400px;
+  padding-bottom: 480px;
+  color: black;
+  font-family: serif;
+  font-size: 3em;
+  letter-spacing: 5px;
+  word-spacing: 0px;
+  float: right;
+  width: 800px;
+}
+.geb {
+  margin-top: -400px;
+  padding-bottom: 480px;
+  font-family: Arial;
+  font-size: 5em;
+  letter-spacing: 5px;
+  word-spacing: 0px;
+  text-shadow: 2px 2px grey;
+  float: right;
+  width: 800px;
+}
+
+.womm {
+  padding: 0px 50px 0px 0px;
+  padding-bottom: -20px;
+  background-color: white;
+  display: inline-block;
+  width: 550px;
+  height: 260px;
+  margin: 0px auto;
+
+  margin-left: 200px;
+}
+.wom {
+  padding: 0px;
+  display: inline-block;
+}
+
+.women {
+  margin-top: 80px;
+  float: right;
+  border-top: 2px solid black;
+  padding-top: 8px;
+  margin-left: -17px;
+}
+.fs h2 {
+  font-size: 2em;
+  font-family: halvetica bold;
+}
+
+.menn {
+  background-color: white;
+  width: 520px;
+  height: 260px;
+  margin-top: -264px;
+  margin-left: 810px;
+  padding-right: -40px;
+}
+.men {
+  padding: 0px;
+  display: inline-block;
+}
+
+.menmen {
+  margin-top: 80px;
+  float: right;
+  border-top: 2px solid black;
+  padding-top: 8px;
+}
+
+.new {
+  text-align: center;
+}
+.newe h3 {
+  font-size: 2em;
+  border-bottom: 3px solid orange;
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+.newe {
+}
+
+.edimages img {
+  border: 1px solid #e6e6e6;
+  width: 80%;
+  margin: 10px;
+}
+
+.edimages {
+  padding: 10px;
+  -webkit-align-content: center;
+  text-align: center;
+  padding-bottom: 100px;
+  background-color: white;
+}
+.kor {
+  display: inline-block;
+  width: 300px;
+}
+.both {
+  display: inline-block;
+  width: 800px;
+  text-align: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: arial black;
+  font-family: Arial Black;
+  text-align: center;
+  font-size: 19px;
+}
+
+.icons img {
+  float: left;
+  display: inline-block;
+}
+
+.bg {
+  background: url("../images/look.jpg") repeat;
+  /* <img th:src="@{../images/lgg.png}"> */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  height: 400px;
+  background: transparent;
+}
+
+.all {
+  background-color: white;
+}
+
+.container h3 {
+  padding-top: 50px;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  letter-spacing: 10px;
+  line-height: 50px;
+  height: 120px;
+}
+
+.cll {
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.last {
+  margin-top: -32px;
+}
+
+.bg-cover {
+  background: url("../images/shhh2.jpg");
+  width: 100%;
+}
+.bg-covered {
+  background: url("../images/looks.png");
+  background-size: cover;
+  background-position: center;
+}
+.bg-coveredd {
+  background: url("../images/loks.jpg");
+}
+.backg {
+  background: url("../images/bg.jpg");
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

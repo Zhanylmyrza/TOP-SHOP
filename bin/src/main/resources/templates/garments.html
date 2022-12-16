@@ -1,0 +1,36 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <title>Pantry</title>
+    <link th:href="@{/stock-stylesheet.css}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a th:href="@{/}">Form</a>
+      <a th:href="@{/garments}">Garments</a>
+    </div>
+
+    <div class="container">
+      <h2>Pantry</h2>
+      <table id="table">
+        <tr>
+          <th>Gender</th>
+          <th>Category</th>
+          <th>Size</th>
+          <th>Price</th>
+        </tr>
+        <tr th:each="pantry: ${pantry}">
+          <td th:text="${pantry.gender}"></td>
+          <td th:text="${pantry.category}"></td>
+          <td th:text="${pantry.size}"></td>
+          <td th:text="${pantry.price}"></td>
+          <td>
+            <a role="button" class="update" th:href="@{/(id = ${pantry.id})}"
+              >Update</a
+            >
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

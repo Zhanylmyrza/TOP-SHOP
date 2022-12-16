@@ -1,0 +1,131 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <title>P A N T R Y</title>
+
+    <link rel="stylesheet" type="text/css" href="pagecss.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+
+    <link th:href="@{/stock-stylesheet.css}" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a th:href="@{/}" class="navbar-brand"
+        ><img src="../images/lgg.png" width="100" alt="logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a
+              th:href="@{/}"
+              class="nav-link"
+              style="
+                font-family: Geneva, Arial, Helvetica, sans-serif;
+                font-size: 15px;
+              "
+              >HOME</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              th:href="@{/form}"
+              class="nav-link"
+              style="
+                font-family: Geneva, Arial, Helvetica, sans-serif;
+                font-size: 15px;
+              "
+              >FORM</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              th:href="@{/garments}"
+              class="nav-link"
+              style="
+                font-family: Geneva, Arial, Helvetica, sans-serif;
+                font-size: 15px;
+              "
+              >GARMENTS</a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            type="text"
+            class="form-control mr-sm-2"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h2>Order List</h2>
+      <table id="table">
+        <tr>
+          <th>Gender</th>
+          <th>Category</th>
+          <th>Name</th>
+          <th>Size</th>
+          <th>Price</th>
+        </tr>
+        <tr th:each="pantry: ${garments}">
+          <td th:text="${pantry.gender}"></td>
+          <td th:text="${pantry.category}"></td>
+          <td th:text="${pantry.name}"></td>
+          <td th:text="${pantry.size}"></td>
+          <td th:text="${pantry.price}"></td>
+          <td>
+            <a
+              role="button"
+              class="update"
+              th:href="@{/form(id = ${pantry.id})}"
+              >Update</a
+            >
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

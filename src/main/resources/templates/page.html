@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title> T O P * S H O P</title>
+
+
+  <link rel="stylesheet" type="text/css" href="pagecss.css"/>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+ 
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 6%;
+  }
+  </style> 
+</head>
+<body>
+
+<nav class="navbar navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+	<a th:href="@{/}" class="navbar-brand"><img src="../images/lgg.png" width="100"  alt="logo"></a> 
+	<button class="navbar-toggler" type="button" data-toggle='collapse' data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a th:href="@{/}" class="nav-link" style="font-family: Geneva, Arial, Helvetica, sans-serif;
+ font-size: 15px;">HOME</a>	
+			</li>
+			<li class="nav-item">
+				<a th:href="@{/sign-up}" class="nav-link" style="font-family: Geneva, Arial, Helvetica, sans-serif;
+ font-size: 15px;">SIGN-UP</a>	
+			</li>
+			
+		</ul>
+		<form class="form-inline my-2 my-lg-0">
+			<li class=" navbar-nav mr-auto nav-item">
+				<a th:href="@{/sign-in}" class="nav-link" style="font-family: Geneva, Arial, Helvetica, sans-serif;
+ font-size: 15px; color: rgb(230, 8, 8);font-weight: bold;">SIGN-IN</a>	
+			</li>
+		</form>
+		
+	</div>
+</nav>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/m2.jpg" alt="Los Angeles">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had such a great time in LA!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="images/m3.jpg" alt="Chicago">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="images/wauu.jpg" alt="New York">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<div class="all">
+  <div class="container text-center" style="padding-bottom: 1px;">
+    <h3>MID SEASON SALE</h3>    
+    <p>Shop the new collection at wonderfull prices and stock up on your favorite pieces.</p>
+  </div>
+</div>
+
+
+    <div class="edimages">
+      <div class="kor">
+        <img src="images/aj.jpg" height="350">
+        <h3>PAUL SMITH</h3>
+        <h4>Accessories</h4>
+        <h3>45$</h3>
+      </div>
+      <div class="kor">
+      <img src="images/ab.jpg" height="350">
+      <h3>PAUL SMITH</h3>
+      <h4>Accessories</h4>
+      <h3>45$</h3>
+      </div>
+      <div class="kor">
+      <img src="images/aa.jpg" height="350">
+      <h3>PAUL SMITH</h3>
+      <h4>Accessories</h4>
+      <h3>45$</h3>
+      </div>
+      <div class="kor">
+      <img src="images/ad.jpg" height="350">
+      <h3>PAUL SMITH</h3>
+      <h4>Accessories</h4>
+      <h3>45$</h3>
+      </div>
+      <div class="kor">
+      <img src="images/ae.jpg" height="350">
+      <h3>PAUL SMITH</h3>
+      <h4>Accessories</h4>
+      <h3>45$</h3>
+      </div>
+      <div class="kor">
+      <img src="images/af.jpg" height="350">
+      <h3>PAUL SMITH</h3>
+      <h4>Accessories</h4>
+      <h3>45$</h3>
+      </div>
+      <div class="kor">
+      <img src="images/ag.jpg" height="350">
+      <h3>PAUL SMITH</h3>
+      <h4>Accessories</h4>
+      <h3>45$</h3>
+      </div>
+      <div class="kor">
+      <img src="images/abc.png" height="350">
+      <h3>PAUL SMITH</h3>
+      <h4>Accessories</h4>
+      <h3>45$</h3>
+      </div>
+      <div class="kor">
+      <img src="images/ai.jpg" height="350">
+      <h3>PAUL SMITH</h3>
+      <h4>Accessories</h4>
+      <h3>45$</h3>
+      </div>
+    </div> 
+
+<div class="bg"></div>
+<div class="cll">
+  <div class="container text-center" style="font-family: Geneva, Arial, Helvetica; color: white;">
+    <h3>Shop the new collection</h3>    
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+    <button type="button" class="btn btn-outline-primary">
+    <a th:href="@{/orderList}" class="nav-link" style="font-family: Geneva, Arial, Helvetica, sans-serif;
+ font-size: 15px;">ORDER NOW </a>	
+ </button>
+ 
+  </div>
+</div>  
+
+    <div class="edimages">
+      <div class="kor">
+        <img src="images/sh11.jpg" height="350">
+        <h3>PAUL SMITH</h3>
+        <h4>Accessories</h4>
+        <h3>45$</h3>
+      </div>
+      <div class="kor">
+      <img src="images/sh2.jpg" height="350">
+      <h3>PAUL SMITH</h3>
+      <h4>Accessories</h4>
+      <h3>45$</h3>
+      </div>
+      <div class="kor">
+      <img src="images/sh3.jpg" height="350">
+      <h3>PAUL SMITH</h3>
+      <h4>Accessories</h4>
+      <h3>45$</h3>
+      </div>
+      <div class="kor">
+      <img src="images/sh4.jpg" height="350">
+      <h3>PAUL SMITH</h3>
+      <h4>Accessories</h4>
+      <h3>45$</h3>
+      </div>
+      <div class="kor">
+      <img src="images/sh5.jpg" height="350">
+      <h3>PAUL SMITH</h3>
+      <h4>Accessories</h4>
+      <h3>45$</h3>
+      </div>
+      <div class="kor">
+      <img src="images/sh6.jpg" height="350">
+      <h3>PAUL SMITH</h3>
+      <h4>Accessories</h4>
+      <h3>45$</h3>
+      </div>
+      <div class="kor">
+      <img src="images/sh7.jpg" height="350">
+      <h3>PAUL SMITH</h3>
+      <h4>Accessories</h4>
+      <h3>45$</h3>
+      </div>
+      <div class="kor">
+      <img src="images/sh8.jpg" height="350">
+      <h3>PAUL SMITH</h3>
+      <h4>Accessories</h4>
+      <h3>45$</h3>
+      </div>
+      <div class="kor">
+      <img src="images/sh9.jpg" height="350">
+      <h3>PAUL SMITH</h3>
+      <h4>Accessories</h4>
+      <h3>45$</h3>
+      </div>
+    </div> 
+
+
+<div class="jumbotron jumbotron text-center" style="font-family: Geneva, Arial, Helvetica;">
+  <div class="container-fluid">
+    <h3>Subscribe to our newsletter</h3>    
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+  </div>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+  </form>
+</div>
+
+<div class="last">
+<div class="jumbotron jumbotron bg-dark navbar-dark" style="font-family: Geneva, Arial, Helvetica; color: white;">
+	<div class="container-fluid">
+  <div class="row">
+
+    <div class="col" > 198 West 21th Street, Suite 721</br>
+New York NY 10010</br>
+Email: youremail@yourdomain.com</br>
+Phone: +88 (0) 101 0000 000</div>
+    <div class="col" > <div style="font-family: Geneva, Arial, Helvetica;
+ font-size: 20px; letter-spacing: 2px;"> Corporate Info & Help</br></div>
+
+Careers</br>
+About The Brand</br>
+Sustainability</br>
+Press</div>
+    <div class="col"> <div style="font-family: Geneva, Arial, Helvetica;
+ font-size: 20px;letter-spacing: 2px;">Frequently Asked Questions</br></div>
+
+Help & Support</br>
+Shipping & Returns</br>
+Sales & Coupons</br>
+Store Locator</div>
+  </div>
+</div>
+  </div>
+</div>
+</div>  
+
+
+<footer>&#9400; Untitled Design | ePortfolio | 15.03.2018</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <link th:href="@{/form-stylesheet.css}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a th:href="@{/}">Form</a>
+      <a th:href="@{/garments}">Garments</a>
+    </div>
+    <div class="container">
+      <h2>Garment Portal</h2>
+      <form method="post" th:object="${pantry}" th:action="@{/handleSubmit}">
+        <input type="text" placeholder="Gender" th:field="*{gender}" />
+        <input type="text" placeholder="Category" th:field="*{category}" />
+        <input type="text" placeholder="Size" th:field="*{size}" />
+        <input type="text" placeholder="Price" th:field="*{price}" />
+
+        <input type="hidden" th:field="*{id}" />
+        <br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
